@@ -104,18 +104,8 @@ How to capture screenshots on Windows:
 - Press `Windows + Shift + S` to open the Snipping Tool, select the area, then paste or save the image to `screenshots/`.
 - Or open PowerShell and run `Start-Process ms-screenclip:` then save the image.
 
----
 
-## Troubleshooting
 
-- "Cannot find module 'app.js'": make sure your `backend/package.json` `main` and `scripts` point to `src/app.js` if your entry is in `src`.
-- `MongooseError: The 'uri' parameter ... got 'undefined'`: ensure `.env` contains `MONGO_URI` and that `dotenv` is loading it. Restart the server after creating `.env`.
-- `options usenewurlparser, useunifiedtopology are not supported`: remove these options from `mongoose.connect()` call; newer drivers do not require them.
 
-If you see other errors, paste the terminal output here and I'll help.
 
----
 
-## Contact
-
-If you need more help, reply here with the error output or a screenshot placed in `screenshots/`.
